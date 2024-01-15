@@ -2,14 +2,23 @@
     color: #FF5400;
 }
 
+.sec-color-grey {
+    color: rgba(19, 19, 24, 0.70);
+}
+
 .white {
     color: #FFF;
+}
+
+.pri-title {
+    font-size: 40px;
 }
 
 .pri-btn {
     border-radius: 8px;
     background: #FF5400;
-    padding:16px;
+    color: #FFF;
+    padding: 16px;
     border: 0;
     width: 174px;
 }
@@ -32,6 +41,7 @@ header {
     gap: 40px;
     font-size: 18px;
 }
+
 /* .navbar img:{
     min-width: 576px;
     display: none;
@@ -80,32 +90,93 @@ header {
     border-radius: 8px;
     background: #FFF;
     border: 0;
-    padding:16px 0 16px 6px;
+    padding: 16px 0 16px 6px;
     width: 174px;
 }
 
+/* Our Popular Tours */
+.popular-tour {
+    border: 2px solid tomato;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.popular-tour-text h1 {
+    padding-bottom: 24px;
+}
+
+.popular-tour-text li {
+    padding-top: 16px;
+}
+
+.popular-tour-text button {
+    margin-top: 32px;
+}
+
+/* Choose Your Destination */
+.destination {
+    border: 2px solid tomato;
+}
+
+.destination-text {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    gap: 20px;
+}
+
+
+
 /* for small device */
 @media screen and (max-width:576px) {
-    
-    .header-menu li{
-        display:none;
+
+    .header-menu li {
+        display: none;
     }
-    .banner-input{
+
+    .popular-tour,
+    .banner-input,
+    .flex {
         display: grid;
         flex-direction: column;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-    .banner-input .input{
+
+    .banner-input .input,
+    .popular-tour-text p {
         font-size: 14px;
     }
 
-    .banner-text h1{
+    .banner-text h1 {
         padding: 9px 5px;
         font-size: 22px;
     }
-    .banner-text p{
+
+    .banner-text p {
         font-size: 14px;
+    }
+
+    .popular-tour-text h1 {
+        font-size: 20px;
+    }
+
+    .popular-tour-img img{
+        width:100%;
+        height: 342px;
+    }
+
+    .flex img {
+        width: 100%;
+        height: 176px;
+        object-fit: cover;
+        border-radius: 16px;
     }
 
 }

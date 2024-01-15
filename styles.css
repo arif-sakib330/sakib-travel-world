@@ -1,3 +1,80 @@
-p{
-    color: blue;
+.pri-color {
+    color: #FF5400;
+}
+
+.white {
+    color: #FFF;
+}
+
+.pri-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    padding:16px;
+    border: 0;
+    width: 174px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu>ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #424247;
+}
+
+.header-menu .pri-color {
+    color: #FF5400;
+}
+
+/* banner */
+.banner-container {
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Group13.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    /* height: 500px; */
+    border: 2px solid tomato;
+}
+
+.banner-text h1 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 50px 24px;
+}
+
+.banner-input {
+    border: 2px solid tomato;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    margin: 48px 100px;
+
+}
+
+.banner-input .input {
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    padding: 16px;
+    width: 174px;
 }

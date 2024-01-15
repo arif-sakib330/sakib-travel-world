@@ -131,7 +131,83 @@ header {
     gap: 20px;
 }
 
+.flex img {
+    width: 100%;
+}
 
+/* choose-us*/
+.choose-us {
+    border: 2px solid tomato;
+}
+
+.choose-us-text {
+    text-align: center;
+}
+
+.card-flex {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.card-color {
+    color: #5A5A5D
+}
+
+.choose-us-card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px;
+}
+
+.choose-us-card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 30px;
+}
+
+.choose-us-card-3 {
+    width: 573px;
+    /* margin: 0 auto; */
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 30px ;
+}
+
+
+
+
+
+/* footer */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    border: 2px solid tomato;
+    margin-top: 100px;
+}
+
+.header-title {
+    justify-content: center;
+}
+
+.footer-text {
+    text-align: center;
+}
+.icon > i{
+    gap: 20px;
+    margin-right: 20px;
+}
+.line{
+    margin: 0 80px;
+}
+
+.footer-text>p {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+}
 
 /* for small device */
 @media screen and (max-width:576px) {
@@ -142,7 +218,8 @@ header {
 
     .popular-tour,
     .banner-input,
-    .flex {
+    .flex,
+    .card-flex {
         display: grid;
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
@@ -150,7 +227,8 @@ header {
     }
 
     .banner-input .input,
-    .popular-tour-text p {
+    .popular-tour-text p,
+    .card-flex {
         font-size: 14px;
     }
 
@@ -163,12 +241,13 @@ header {
         font-size: 14px;
     }
 
-    .popular-tour-text h1 {
+    .popular-tour-text h1,
+    .choose-us h1 {
         font-size: 20px;
     }
 
-    .popular-tour-img img{
-        width:100%;
+    .popular-tour-img img {
+        width: 100%;
         height: 342px;
     }
 
@@ -177,6 +256,12 @@ header {
         height: 176px;
         object-fit: cover;
         border-radius: 16px;
+    }
+
+    .choose-us-card-3 {
+        max-width: 100%;
+        /* max-width: 335px; */
+        margin: 0;
     }
 
 }

@@ -23,6 +23,12 @@
     width: 174px;
 }
 
+.bright-black {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+}
+
 /* header */
 header {
     display: flex;
@@ -83,7 +89,6 @@ header {
     background: rgba(255, 255, 255, 0.30);
     padding: 16px;
     margin: 48px 100px;
-
 }
 
 .banner-input .input {
@@ -174,10 +179,100 @@ header {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    padding: 30px ;
+    padding: 30px;
+}
+
+.card-3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Deals & Discounts */
+.deals-discounts-container {
+    border: 2px solid tomato;
+}
+
+.deals-discounts-text {
+    text-align: center;
+}
+
+.deals-discounts-text>p {
+    color: rgba(19, 19, 24, 0.70)
+}
+
+.deals-discounts-card {
+    border: 2px solid tomato;
+    /* background-image: url('Images/group39.png'); */
+}
+
+.deals-discounts-card-mini {
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 579px;
+    padding: 50px;
+    margin: 50px 50px 50px auto;
+    position: relative;
+    bottom: 200px;
+}
+
+/*  A Simple Perfect Place To Get Lost */
+
+.perfect-place {
+    display: flex;
+    border: 2px solid tomato;
 }
 
 
+/* Newsletter */
+.newsletter {
+    border: 2px solid tomato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-input {
+    display: block;
+    width: 393px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 0;
+    padding-left: 20px;
+    border: 0;
+}
+
+.newsletter-box {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+
+}
+
+.newsletter-box>.pri-btn {
+    width: 393px;
+}
+
+.offer {
+    display: flex;
+    justify-content: end;
+}
+
+.newsletter-img img {
+    width: 100%;
+}
+
+.text-news {
+    text-align: center;
+    width: 324px;
+    height: 120px;
+    position: relative;
+    bottom: 200px;
+    right: 20px;
+    transform: rotate(-30deg);
+}
 
 
 
@@ -195,18 +290,14 @@ footer {
 .footer-text {
     text-align: center;
 }
-.icon > i{
+
+.icon>i {
     gap: 20px;
     margin-right: 20px;
 }
-.line{
-    margin: 0 80px;
-}
 
-.footer-text>p {
-    color: #131318;
-    font-family: Inter;
-    font-size: 16px;
+.line {
+    margin: 0 80px;
 }
 
 /* for small device */

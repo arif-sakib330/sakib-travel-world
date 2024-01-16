@@ -1,7 +1,15 @@
 * {
-    font-family: mulish;
+    font-family: mulishx
 }
-
+header{
+    margin:25px 50px;
+}
+main{
+    margin:0 50px;
+}
+footer{
+    margin: 0 50px;
+}
 .pri-color {
     color: #FF5400;
 }
@@ -336,8 +344,17 @@ footer {
 
 /* for small device */
 @media screen and (max-width:600px) {
-    * {
-        margin-bottom: 30px;
+    *{
+        margin-bottom: 15px;
+    }
+    header{
+        margin:15px 25px;
+    }
+    main{
+        margin:0 25px;
+    }
+    footer{
+        margin: 0 25px;
     }
 
     .header-menu li {
@@ -416,10 +433,13 @@ footer {
     .newsletter-box {
         padding: 0px;
     }
+    .newsletter-img{
+        height: 100%;
+    }
     
     .text-news {
         width: 60%;
-        bottom: 200px;
+        bottom: 150px;
         right: 20px;
     }
     
